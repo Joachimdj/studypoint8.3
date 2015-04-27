@@ -1,0 +1,16 @@
+<h2>Friends of {{membersDetails.name}}</h2>
+
+<table class="table">
+    <thead>
+    <tr>
+        <td>Names</td>
+    </tr>
+    </thead>
+    <tbody>
+    <tr ng-repeat="friend in membersDetails.friends">
+        <td>{{friend.name}}</td>
+    </tr>
+    </tbody>
+</table>
+
+<a href="#/">Back</a>

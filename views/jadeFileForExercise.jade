@@ -1,0 +1,26 @@
+extends layout
+block content
+   h3 #{introText}
+
+   table.table
+      thead
+         tr
+            th ID
+            th Eyecolor
+            th Name
+            th Gender
+            th Email
+            th Friends
+      tbody
+      each member in members
+         tr
+            td #{member.id}
+            td #{member.eyeColor}
+            td #{member.name}
+            td #{member.gender}
+            td #{member.email}
+            td
+               a(href="/details/#{member.id}") Show
+
+   br
+   a(href="/") Back

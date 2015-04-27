@@ -1,0 +1,15 @@
+extends layout
+
+block content
+  h3 Friends of #{member.name}
+
+  table.table
+    thead
+      tr
+        th Names
+    tbody
+    each friend in member.friends
+      tr
+        td #{friend.name}
+  br
+  a(href="/jadeDemo") Back
